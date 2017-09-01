@@ -1,0 +1,221 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/blueelectric.gif");
+  background-size: cover;
+}
+
+#start-button {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  border: 3px solid green;
+  width: 150px;
+  height: 50px;
+  background-color: grey;
+  font-size: 30px;
+  color: red;
+}
+
+#stop-button {
+  position: absolute;
+  left: 210px;
+  top: 40px;
+  border: 3px solid green;
+  width: 150px;
+  height: 50px;
+  background-color: grey;
+  font-size: 30px;
+  color: red;
+}
+
+#battuta {
+  height: 91px;
+  width: 150px;
+  border: 3px solid purple;
+  position: absolute;
+  left: 950px;
+  top: 18px;
+  background-color: black;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+#score {
+  height: 91px;
+  width: 150px;
+  border: 3px solid red;
+  position: absolute;
+  left: 700px;
+  top: 18px;
+  background-color: black;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+.drum-machine-container {
+  height: 686px;
+  width: 1100px;
+  border: 9px solid black;
+  background-image: url("../images/background-drum.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.drum-machine-container BUTTON {
+  height: 127px;
+  width: 127px;
+  border: 5px solid black;
+  position: absolute;
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.drum-machine-container BUTTON:hover, .drum-machine-container BUTTON.pressed {
+  border: 5px solid gray;
+}
+
+.drum-machine-container .button {
+  cursor: pointer;
+}
+
+.drum-machine-container .button.row1 {
+  top: 138px;
+}
+
+.drum-machine-container .button.row2 {
+  top: 272px;
+}
+
+.drum-machine-container .button.row3 {
+  top: 412px;
+}
+
+.drum-machine-container .button.row4 {
+  top: 545px;
+}
+
+.drum-machine-container .button.col1 {
+  left: 555px;
+}
+
+.drum-machine-container .button.col2 {
+  left: 688px;
+}
+
+.drum-machine-container .button.col3 {
+  left: 823px;
+}
+
+.drum-machine-container .button.col4 {
+  left: 956px;
+}
+
+.drum-machine-container .kits {
+  padding-left: 5px;
+}
+
+.drum-machine-container .kits LI {
+  color: white;
+  list-style-type: none;
+  padding: 0 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.drum-machine-container .kits LI.selected {
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+#equalizer {
+  background-image: url("../images/equalizer.gif");
+  position: absolute;
+  background-size: cover;
+  left: 33px;
+  top: 142px;
+  height: 210px;
+  width: 380px;
+  border-radius: 4px;
+  border: 3px solid black;
+}
+
+#dancing {
+  height: 400px;
+  width: 360px;
+  position: absolute;
+  left: 1232px;
+  top: 0;
+  background-image: url("");
+  background-size: cover;
+  opacity: 0.4;
+}
+
+#snare {
+  background-color: rgba(234, 211, 16, 0.5)
+}
+
+#charly {
+  background-color: rgba(234, 135, 16, 0.5)
+}
+
+#kick {
+  background-color: rgba(202, 57, 35, 0.5)
+}
+
+#crash {
+  background-color: rgba(69, 184, 26, 0.5)
+}
+
+#tom2 {
+  background-color: rgba(16, 184, 120, 0.5)
+}
+
+#scratch {
+  background-color: rgba(66, 115, 213, 0.5)
+}
+
+#clap {
+  background-color: rgba(48, 32, 200, 0.5)
+}
+
+#tom1 {
+  background-color: rgba(162, 41, 223, 0.5)
+}
+
+#ride {
+  background-color: rgba(223, 41, 190, 0.5)
+}
+
+#trumpet {
+  background-color: rgba(189, 18, 18, 0.5)
+}
+
+#bass-drum {
+  background-color: rgba(151, 149, 8, 0.5)
+}
+
+#synth {
+  background-color: rgba(5, 220, 5, 0.5)
+}
+
+#noise {
+  background-color: rgba(255, 30, 30, 0.5)
+}
+
+#punk {
+  background-color: rgba(5, 245, 74, 0.5);
+}
+
+#rock {
+  background-color: rgba(0, 88, 254, 0.5);
+}
+
+#guitar {
+  background-color: rgba(254, 0, 227, 0.5)
+}

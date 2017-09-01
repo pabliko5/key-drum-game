@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+        <title>Drum-game</title>
+    </head>
+
+    <body>
+      <input id = "battuta" type = "number" value = "0"></input>
+      <input id = "score"  type = "number" value  ="0"></input>
+
+        <section class="drum-machine-container">
+            <button id="start-button" class="button">START</button>
+            <button id="stop-button" class="button">PLAY</button>
+            <div id = "battuta">0</div>
+            <div id = "score">0</div>
+            <div id="equalizer">
+                <ul class="kits">
+                    <li id="classic" class="">Classic Kit</li>
+                    <li id="gmkit" class="selected">GM Kit</li>
+                    <li id="electro" class="">Hard Electro</li>
+                </ul>
+            </div>
+            <button id="snare" class="button row1 col1" onclick="myGame.playSound('snare')" title="Keys S">
+                SNARE
+            </button>
+            <button id="charly" class="button row1 col2" onclick="myGame.playSound('charly')" title="Key SPACE">
+                CHARLY
+            </button>
+            <button id="kick" class="button row1 col3" onclick="myGame.playSound('kick')" title="Key K">
+                KICK
+            </button>
+            <button id="crash" class="button row1 col4" onclick="myGame.playSound('crash')" title="Key A">
+                CRASH
+            </button>
+
+
+            <button id="tom1" class="button row2 col1" onclick="myGame.playSound('tom1')" title="Key T">
+                TOM1
+            </button>
+            <button id="tom2" class="button row2 col2" onclick="myGame.playSound('tom2')" title="Key Y">
+                TOM2
+              </button>
+            <button id="clap" class="button row2 col3" onclick="myGame.playSound('clap')" title="Key W">
+                CLAP
+              </button>
+            <button id="ride" class="button row2 col4" onclick="myGame.playSound('ride')" title="Key Q">
+                RIDE
+              </button>
+
+
+            <button id="scratch" class="button row3 col1">SCRATCH</button>
+            <button id="bass-drum" class="button row3 col2">BASS-DRUM</button>
+            <button id="trumpet" class="button row3 col3">TRUMPET</button>
+            <button id="synth" class="button row3 col4">SYNTH</button>
+
+            <button id="guitar" class="button row4 col1">GUITAR</button>
+            <button id="punk" class="button row4 col2">ALARM</button>
+            <button id="rock" class="button row4 col3">POP</button>
+            <button id="noise" class="button row4 col4">BUBBLE</button>
+
+            <div id="dancing" class="button"></div>
+        </section>
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <script type="text/javascript" src="./script/drum-game.js"></script>
+        <script type="text/javascript" src="./script/app.js"></script>
+
+    </body>
+
+</html>
