@@ -1,36 +1,28 @@
 function DrumGame() {
   this.sounds = [
     ["kick", "kick", "snare", "kick", "kick", "snare", ],
-    ["kick", "snare", "kick", "kick", "snare", "kick", "snare", "kick", "kick", "snare"],
-    ["kick", "snare", "kick", "snare", "kick", "kick", "snare"],
-    ["kick", "snare", "snare", "kick", "kick", "snare"]
+    ["kick", "kick","snare" ,"kick", "kick", "kick", "snare", "kick"],
+    ["snare", "snare", "snare", "kick", "snare", "kick"],
+    ["kick", "kick", "kick", "snare", "kick", "snare"]
   ];
   this.sequence = [];
   this.userSounds = [];
   this.userKeyDownCount = 0;
   this.round = 1;
-  this.life = 3;
+  this.life = 30;
   this.kit = 'gmkit';
 }
 
 
 DrumGame.prototype.startGame = function() {
-  var prueba = document.getElementById("battuta");
-  /*
-      AUDIO  START
-  */
-    var audior = document.getElementsByTagName("audio")[0];
-    audior.src = "../drum-game-v2/audio/rockandroll.mp3";
-    audior.volume = "0.0";
-    audior.controls = true;
-    /*
-        END AUDIO
-    */
-
-
+  $("#intro")[0].pause();
   this.addSounds();
   this.playSequence();
 };
+
+DrumGame.prototype.startMusic = function() {
+  $("#demo")[0].play();
+}
 
 
 DrumGame.prototype.addSounds = function() {
@@ -85,7 +77,6 @@ DrumGame.prototype.compareSequence = function (){
   for (var i = 0; i < this.sequence.length; i++) {
     this.sequence[i] == this.userSounds[i] ? controler=true : controler=false;
   }
-  console.log(controler)
   controler ? this.userSounds = [] : this.lifeDown();
 }
 
@@ -93,6 +84,7 @@ DrumGame.prototype.lifeDown = function() {
   this.userSounds = []
   if(this.life > 0) {
     this.life -= 1
+    $("#score").text(this.life)
   } else {
     this.gameOver()
   }

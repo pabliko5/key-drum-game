@@ -8,17 +8,18 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
         <title>Drum-game</title>
+        <audio src="./audio/robot.mp3" id="intro"></audio>
+        <audio src="./audio/rockandroll.mp3" id="demo"></audio>
+
     </head>
 
     <body>
-      <input id = "battuta" type = "number" value = "0"></input>
-      <input id = "score"  type = "number" value  ="0"></input>
 
         <section class="drum-machine-container">
             <button id="start-button" class="button">START</button>
             <button id="stop-button" class="button">PLAY</button>
             <div id = "battuta">0</div>
-            <div id = "score">0</div>
+            <div id = "score">8</div>
             <div id="equalizer">
                 <ul class="kits">
                     <li id="classic" class="">Classic Kit</li>
@@ -54,7 +55,7 @@
               </button>
 
 
-            <button id="scratch" class="button row3 col1">SCRATCH</button>
+            <button id="scratch" class="button row3 col1" onclick="myGame.playSound('ride')" title="Key L">SCRATCH</button>
             <button id="bass-drum" class="button row3 col2">BASS-DRUM</button>
             <button id="trumpet" class="button row3 col3">TRUMPET</button>
             <button id="synth" class="button row3 col4">SYNTH</button>
